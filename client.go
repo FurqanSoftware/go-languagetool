@@ -25,7 +25,7 @@ func (c Client) endpoint(path string) string {
 	if baseurl == "" {
 		baseurl = DefaultBaseURL
 	}
-	return c.BaseURL + path
+	return baseurl + path
 }
 
 func (c Client) authorize(data url.Values) {
